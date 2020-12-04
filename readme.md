@@ -6,7 +6,7 @@ Practice Practice Practice
 
 ## Project Description
 
-Practice Practice Practice (PPP) is a react-based web application that allows users to list an interest in a particular category (i.e. entertainment, health, etc.) and guides them through a single week to practice that particular interest on their own terms.   
+Practice Practice Practice (PPP) is a react-based productivity web application that allows users to list an interest in a particular category (i.e. entertainment, health, etc.) and guides them through a single week to practice that particular interest on their own terms.   
 
 
 ## Wireframes
