@@ -87,9 +87,16 @@ EXAMPLE RESPONSE
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Setting up boiler plate code | H | 2hrs| hrs | hrs |
+| Connecting to Airtable API | H | 3hrs| hrs | hrs |
+| Adding User Input Form | H | 3hrs| hrs | hrs |
+| Creating Components | H | 3hrs| hrs | hrs |
+| Routing Components | H | 3hrs| hrs | hrs |
+| Rendering API data to app home page | H | 8hrs| hrs | hrs |
+| Base CSS Styling | H | 8hrs| hrs | hrs |
+| PostMVP CSS Styling (i.e. animations, keyframes) | L | 8hrs| hrs | hrs |
+| Adding PostMVP features | L | 8hrs| hrs | hrs |
+| Total | H | 46hrs| hrs | hrs |
 
 ## SWOT Analysis
 
