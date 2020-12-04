@@ -11,14 +11,54 @@ Practice Practice Practice (PPP) is a react-based web application that allows us
 
 ## Wireframes
 
-<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/CuaQcJBpB1KRuHCwLcttKc"></iframe>
+![Screen Shot 2020-12-04 at 1 29 28 PM](https://user-images.githubusercontent.com/74211139/101216937-409b0580-3635-11eb-9eda-81aee36b1b25.png)
+
+![Screen Shot 2020-12-04 at 1 29 51 PM](https://user-images.githubusercontent.com/74211139/101216974-501a4e80-3635-11eb-88b5-216f2b9b5e5c.png)
+
+![Screen Shot 2020-12-04 at 1 30 39 PM](https://user-images.githubusercontent.com/74211139/101216990-5c9ea700-3635-11eb-968b-926c72a6da89.png)
+
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+
+![Screen Shot 2020-12-04 at 1 30 59 PM](https://user-images.githubusercontent.com/74211139/101217028-6fb17700-3635-11eb-8ec4-435f8a914b51.png)
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+A request and response sample from the Airtable API:
+
+```
+EXAMPLE REQUEST
+curl "https://api.airtable.com/v0/appJUW21zxe6FEjd1/Practice%20Practice%20Practice?maxRecords=3&view=Grid%20view" \
+  -H "Authorization: Bearer YOUR_API_KEY"
+EXAMPLE RESPONSE
+{
+    "records": [
+        {
+            "id": "rec1SfHm7H97XC3Fi",
+            "fields": {
+                "Topic": "Music",
+                "Specifics": "A Minor Scale",
+                "Comments": "Arppegios, traveling up and down the scale ",
+                "Days": "4",
+                "Hours": "5",
+                "Completed": "No"
+            },
+            "createdTime": "2020-12-04T21:09:54.000Z"
+        },
+        {
+            "id": "reckFRl0st01bSwuk",
+            "fields": {},
+            "createdTime": "2020-12-04T21:09:54.000Z"
+        },
+        {
+            "id": "recw3ubx7EfW93etn",
+            "fields": {},
+            "createdTime": "2020-12-04T21:09:54.000Z"
+        }
+    ],
+    "offset": "recw3ubx7EfW93etn"
+}
+```
 
 ### MVP/PostMVP
 
@@ -26,30 +66,26 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP 
 
-- Render user form data from my personal Airtable API on the page 
-- Allow user to create and delete their posts from the Airtable API  
+- Render sample data from the Airtable API on the app page 
+- Allow users to view their inputs from their form and render data to the app home page
+- Let users delete their posts
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Add a calendar feature
+- Add sound effects and a congratulations screen on practice completion
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|December 3-4| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|December 4| Project Approval | Incomplete
+|December 4-5| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|December 4-10| Pseudocode / actual code | Incomplete
+|December 8| Initial Clickable Model  | Incomplete
+|December 8-9| MVP | Incomplete
+|December 11| Presentations | Incomplete
 
 ## Timeframes
 
