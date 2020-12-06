@@ -102,8 +102,16 @@ EXAMPLE RESPONSE
 
 ### Strengths:
 
+I find that this project being a productivity app is very motivating for me. I have many different things I would like to practice and I feel that this completed project will be useful for many years to come.
+
 ### Weaknesses:
+
+Remembering proper syntax and proper placement of the logic when setting up the React components will be difficult to overcome.
 
 ### Opportunities:
 
+FIRE and CRUD are still pretty foreign to me. Since FIRE and CRUD are essential to setting up the project, I think that the research I put into applying these subjects will foster a lot of growth in my understanding of React.
+
 ### Threats:
+
+I have a tendency to bounce around steps if something doesn't immediately work or if a new idea comes to mind. This could cause more errors than fix them in React since theres so many individual parts that must be functional themselves to function with other files.
