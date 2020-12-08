@@ -9,6 +9,13 @@ import axios from "axios";
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    async function getPracticeRoutines() {
+      let resp = await axios.get(baseURL, config);
+      console.log(resp.data);
+    }
+    getPracticeRoutines();
+  }, []);
 
 
 
