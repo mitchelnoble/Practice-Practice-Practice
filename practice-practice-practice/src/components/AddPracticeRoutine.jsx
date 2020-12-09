@@ -20,6 +20,30 @@ const AddPracticeRoutine = (props) => {
   const [sunday, setSunday] = useState("");
   const history = useHistory();
 
+  async function handleSubmit(e) {
+    e.preventDefault();
+    let data = {
+      topic,
+      specifics,
+      notes,
+      daily,
+      frequency,
+      hours,
+      monday,
+      tuesday,
+      wednesday,
+      thursday,
+      friday,
+      saturday,
+      sunday,
+    };
+
+    await axios.post(baseURL, { fields: data }, config);
+    props.setToggleFetch((prev) => !prev);
+    history.push("/");
+
+  }
+
   return (
     <div>
     </div>
