@@ -1,7 +1,8 @@
 import { Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useEffect } from "react";
-import { useState } from "react"
+import { useState } from "react";
+import Nav from "./components/Nav";
 import AddPracticeRoutine from "./components/AddPracticeRoutine";
 import Homepage from "./components/Homepage";
 import PracticeRoutine from "./components/PracticeRoutine";
