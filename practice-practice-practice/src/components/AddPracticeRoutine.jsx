@@ -104,57 +104,67 @@ const AddPracticeRoutine = (props) => {
         <label htmlFor='monday'></label>
         <input
           type='text'
-          name=''
-          value=''
+          name='monday'
+          value={monday}
           onChange={(e) => {
-            set(e.target.value);
+            setMonday(e.target.value);
           }}
           />
-        <label htmlFor=''></label>
+        <label htmlFor='tuesday'></label>
         <input
-          type=''
-          name=''
-          value=''
+          type='text'
+          name='tuesday'
+          value={tuesday}
           onChange={(e) => {
-            set(e.target.value);
+            setTuesday(e.target.value);
           }}
           />
-        <label htmlFor=''></label>
+        <label htmlFor='wednesday'></label>
         <input
-          type=''
-          name=''
-          value=''
+          type='text'
+          name='wednesday'
+          value={wednesday}
           onChange={(e) => {
-            set(e.target.value);
+            setWednesday(e.target.value);
           }}
           />
-        <label htmlFor=''></label>
+        <label htmlFor='thursday'></label>
         <input
-          type=''
-          name=''
-          value=''
+          type='text'
+          name='thursday'
+          value={thursday}
           onChange={(e) => {
-            set(e.target.value);
+            setThursday(e.target.value);
           }}
           />
-        <label htmlFor=''></label>
+        <label htmlFor='friday'></label>
         <input
-          type=''
-          name=''
-          value=''
+          type='text'
+          name='friday'
+          value={friday}
           onChange={(e) => {
-            set(e.target.value);
+            setFriday(e.target.value);
           }}
           />
-        <label htmlFor=''></label>
+        <label htmlFor='saturday'></label>
         <input
-          type=''
-          name=''
-          value=''
+          type='text'
+          name='saturday'
+          value={saturday}
           onChange={(e) => {
-            set(e.target.value);
+            setSaturday(e.target.value);
           }}
           />
+        <label htmlFor='sunday'></label>
+        <input
+          type='text'
+          name='sunday'
+          value={sunday}
+          onChange={(e) => {
+            setSunday(e.target.value);
+          }}
+        />
+        <input type = 'submit' />
       </form>
     </div>
   );
