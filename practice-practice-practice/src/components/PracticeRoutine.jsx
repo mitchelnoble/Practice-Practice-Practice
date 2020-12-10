@@ -19,9 +19,6 @@ const PracticeRoutine = () => {
   
   return (
     <div className='routine-container'>
-      {currentRoutine.fields && (
-
-      )}
     </div>
   );
 };
