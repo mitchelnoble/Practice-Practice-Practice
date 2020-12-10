@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <Route exact path="/">
+      <Route exact path="/Home-page">
         <Homepage />
       </Route>
       <Route path="/add-practice-routine">
