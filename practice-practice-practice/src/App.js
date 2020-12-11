@@ -31,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      <Header />
       <Route exact path="/">
         <Homepage practiceRoutines={practiceRoutines} setToggleFetch={setToggleFetch}/>
       </Route>
@@ -41,7 +42,7 @@ function App() {
         <PracticeRoutine practiceRoutines={practiceRoutines} setToggleFetch={setToggleFetch}/>
         </Route>
         <Route path="/routine-completion">
-          <RoutineCompletion />
+        <RoutineCompletion practiceRoutines={practiceRoutines} setToggleFetch={setToggleFetch}/>
         </Route>
       
     </div>
