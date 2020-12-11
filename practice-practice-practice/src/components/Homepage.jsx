@@ -13,8 +13,9 @@ const Homepage = ({ practiceRoutines }) => {
         return (
           <Link className="home-link" key={practiceRoutine.id} to={`/practiceRoutine/${practiceRoutine.id}`}>
             <div className="home-circle">
-              <h3>{practiceRoutine.fields.topic}</h3>
-              </div>
+              <h3 className="home-text">{practiceRoutine.fields.topic}</h3>
+            </div>
+            <div className="spin-circle"></div>
           </Link>
         );
       })}

@@ -15,6 +15,33 @@
   align-items: center;
 }
 
+.spin-circle {
+  height: 30px;
+  width: 30px;
+  background-image: linear-gradient(to right, rgb(246, 99, 99), rgb(255, 255, 255, 0.3));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 .home-link {
   text-align: center;
   text-decoration: none;
@@ -27,5 +54,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-flow: column wrap;
+    padding-top: 20px;
   }
 }
