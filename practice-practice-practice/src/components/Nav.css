@@ -1,0 +1,13 @@
+.navigation {
+  text-align: center;
+  font-family: 'Lato';
+  background-color: rgba(253, 182, 182, 0.7);
+  padding: 5px 0px 7px 0px;
+}
+
+.nav-link {
+  padding: 0px 5px 0px 5px;
+  font-weight: bolder;
+  color: black;
+  text-decoration: inherit;
+}

@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import "./Nav.css"
+import "./Nav.css";
 
 const Nav = () => {
   return (
-    <nav>
-      <Link to ='/'>Home</Link>
-      <Link to ='/add-practice-routine'>Setup Your Practice Routine</Link>
+    <nav className="navigation">
+      <Link className="nav-link" to ='/'>| Home |</Link>
+      <Link className="nav-link" to ='/add-practice-routine'>| Setup Your Practice Routine |</Link>
     </nav>
   );
 };

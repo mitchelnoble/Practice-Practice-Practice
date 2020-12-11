@@ -2,13 +2,13 @@ import axios from "axios";
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
+import Header from "./Header";
 
 const AddPracticeRoutine = (props) => {
 
   const [topic, setTopic] = useState("");
   const [specifics, setSpecifics] = useState("");
   const [notes, setNotes] = useState("");
-  const [daily, setDaily] = useState("");
   const [frequency, setFrequency] = useState("");
   const [hours, setHours] = useState("");
   const [monday, setMonday] = useState(false);
@@ -26,7 +26,6 @@ const AddPracticeRoutine = (props) => {
       topic,
       specifics,
       notes,
-      daily,
       frequency,
       hours,
       monday,
@@ -46,8 +45,10 @@ const AddPracticeRoutine = (props) => {
 
   return (
     <div>
+      <Header />
       <form onSubmit={handleSubmit}>
         <label htmlFor='topic'>So, what is your practice topic?:</label>
+        <br></br>
         <input
           type='text'
           name='topic'
@@ -57,6 +58,7 @@ const AddPracticeRoutine = (props) => {
           }}
         /><br></br>
         <label htmlFor='specifics'>Get specific! What parts of your topic are you practicing?:</label>
+        <br></br>
         <input
           type='text'
           name='specifics'
@@ -66,6 +68,7 @@ const AddPracticeRoutine = (props) => {
           }}
           /><br></br>
         <label htmlFor='notes'>Any notes you'd like to write out?</label>
+        <br></br>
         <input
           type='text'
           name='notes'
@@ -74,16 +77,8 @@ const AddPracticeRoutine = (props) => {
             setNotes(e.target.value);
           }}
           /><br></br>
-        <label htmlFor='daily'>Are you praciticing this topic everyday? (Yes/No): </label>
-        <input
-          type='text'
-          name='daily'
-          value={daily}
-          onChange={(e) => {
-            setDaily(e.target.value);
-          }}
-          /><br></br>
         <label htmlFor='frequency'>How many times a day?: </label>
+        <br></br>
         <input
           type='number'
           name='frequency'
@@ -93,6 +88,7 @@ const AddPracticeRoutine = (props) => {
           }}
           /><br></br>
         <label htmlFor='hours'>How many hours a day?: </label>
+        <br/>
         <input
           type='number'
           name='hours'
@@ -163,7 +159,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setSunday(!sunday);
           }}
-        />
+        /> <br/> <br/>
         <input type = 'submit' />
       </form>
     </div>
