@@ -8,7 +8,7 @@ import "./Homepage.css"
 const Homepage = ({ practiceRoutines }) => {
   console.log(practiceRoutines)
   return (
-    <div>
+    <div className="home-container">
       {practiceRoutines.map((practiceRoutine) => {
         return (
           <Link className="home-link" key={practiceRoutine.id} to={`/practiceRoutine/${practiceRoutine.id}`}>

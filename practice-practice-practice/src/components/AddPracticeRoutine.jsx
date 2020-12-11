@@ -160,7 +160,7 @@ const AddPracticeRoutine = (props) => {
             setSunday(!sunday);
           }}
         /> <br/> <br/>
-        <input type = 'submit' />
+        <input className="pr-button" type = 'submit' />
       </form>
     </div>
   );

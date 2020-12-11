@@ -1,4 +1,11 @@
 .pr-form {
   font-family: 'Lato';
+  font-weight: bolder;
   text-align: center;
+  border-radius: 10%;
+}
+
+.pr-button {
+  font-family: 'Lato';
+  font-weight: bolder;
 }

@@ -1,13 +1,13 @@
 import React, {useEffect,useState} from 'react';
 import PracticeRoutine from "./PracticeRoutine";
 import { useParams } from "react-router-dom";
-
+import "./RoutineCompletion.css";
 
 
 const RoutineCompletion = () => {
 
   return (
-    <div>
+    <div className = "prc-text">
       <h1>Yes! You completed this weeks practice!</h1>
     </div>
   );
