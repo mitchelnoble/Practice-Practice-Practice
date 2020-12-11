@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
 import Header from "./Header";
+import "./AddPracticeRoutine.css";
 
 const AddPracticeRoutine = (props) => {
 
@@ -45,7 +46,7 @@ const AddPracticeRoutine = (props) => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form className = "pr-form" onSubmit={handleSubmit}>
         <label htmlFor='topic'>So, what is your practice topic?:</label>
         <br></br>
         <input
@@ -55,7 +56,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setTopic(e.target.value);
           }}
-        /><br></br>
+        /><br></br><br/>
         <label htmlFor='specifics'>Get specific! What parts of your topic are you practicing?:</label>
         <br></br>
         <input
@@ -65,7 +66,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setSpecifics(e.target.value);
           }}
-          /><br></br>
+          /><br></br><br/>
         <label htmlFor='notes'>Any notes you'd like to write out?</label>
         <br></br>
         <input
@@ -75,7 +76,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setNotes(e.target.value);
           }}
-          /><br></br>
+          /><br></br><br/>
         <label htmlFor='frequency'>How many times a day?: </label>
         <br></br>
         <input
@@ -85,7 +86,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setFrequency(e.target.value);
           }}
-          /><br></br>
+          /><br></br><br/>
         <label htmlFor='hours'>How many hours a day?: </label>
         <br/>
         <input
@@ -95,7 +96,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setHours(e.target.value);
           }}
-          /><br></br> What Days?:<br></br>
+          /><br></br><br/> What Days?:<br></br><br />
         <label htmlFor='monday'>Monday</label>
         <input
           type='checkbox'

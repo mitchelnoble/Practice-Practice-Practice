@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import PracticeRoutine from "./PracticeRoutine";
+import "./Homepage.css";
 
 
 const RoutineList = ({practiceRoutines}) => {
