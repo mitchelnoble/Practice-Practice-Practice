@@ -64,12 +64,13 @@ EXAMPLE RESPONSE
 
 - Render sample data from the Airtable API on the app page 
 - Allow users to view their inputs from their form and render data to the app home page
-- Let users delete their posts
+
 
 #### PostMVP  
 
 - Add a calendar feature
 - Add sound effects and a congratulations screen on practice completion
+- Let users delete their posts
 
 ## Project Schedule
 
