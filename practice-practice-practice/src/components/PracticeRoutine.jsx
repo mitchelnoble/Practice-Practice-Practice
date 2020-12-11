@@ -126,6 +126,7 @@ const PracticeRoutine = () => {
     console.log(res.data);
     setCompletedSunday(!completed_sunday);
   }
+
   console.log(allCompleted)
   if (allCompleted) {
     return (<RoutineCompletion />)

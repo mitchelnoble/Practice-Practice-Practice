@@ -6,6 +6,7 @@ import AddPracticeRoutine from "./components/AddPracticeRoutine";
 import Homepage from "./components/Homepage";
 import PracticeRoutine from "./components/PracticeRoutine";
 import RoutineCompletion from "./components/RoutineCompletion";
+import Header from "./components/Header";
 import { baseURL, config } from "./services/index.js";
 import axios from "axios";
 import './App.css';

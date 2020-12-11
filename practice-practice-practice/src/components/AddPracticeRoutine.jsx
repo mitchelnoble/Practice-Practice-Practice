@@ -55,7 +55,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setTopic(e.target.value);
           }}
-        />
+        /><br></br>
         <label htmlFor='specifics'>Get specific! What parts of your topic are you practicing?:</label>
         <input
           type='text'
@@ -64,7 +64,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setSpecifics(e.target.value);
           }}
-          />
+          /><br></br>
         <label htmlFor='notes'>Any notes you'd like to write out?</label>
         <input
           type='text'
@@ -73,7 +73,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setNotes(e.target.value);
           }}
-          />
+          /><br></br>
         <label htmlFor='daily'>Are you praciticing this topic everyday? (Yes/No): </label>
         <input
           type='text'
@@ -82,7 +82,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setDaily(e.target.value);
           }}
-          />
+          /><br></br>
         <label htmlFor='frequency'>How many times a day?: </label>
         <input
           type='number'
@@ -91,7 +91,7 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setFrequency(e.target.value);
           }}
-          />
+          /><br></br>
         <label htmlFor='hours'>How many hours a day?: </label>
         <input
           type='number'
@@ -100,8 +100,8 @@ const AddPracticeRoutine = (props) => {
           onChange={(e) => {
             setHours(e.target.value);
           }}
-          />
-        <label htmlFor='monday'></label>
+          /><br></br> What Days?:<br></br>
+        <label htmlFor='monday'>Monday</label>
         <input
           type='checkbox'
           name='monday'
@@ -110,7 +110,7 @@ const AddPracticeRoutine = (props) => {
             setMonday(!monday);
           }}
           />
-        <label htmlFor='tuesday'></label>
+        <label htmlFor='tuesday'>Tuesday</label>
         <input
           type='checkbox'
           name='tuesday'
@@ -119,7 +119,7 @@ const AddPracticeRoutine = (props) => {
             setTuesday(!tuesday);
           }}
           />
-        <label htmlFor='wednesday'></label>
+        <label htmlFor='wednesday'>Wednesday</label>
         <input
           type='checkbox'
           name='wednesday'
@@ -128,7 +128,7 @@ const AddPracticeRoutine = (props) => {
             setWednesday(!wednesday);
           }}
           />
-        <label htmlFor='thursday'></label>
+        <label htmlFor='thursday'>Thursday</label>
         <input
           type='checkbox'
           name='thursday'
@@ -137,7 +137,7 @@ const AddPracticeRoutine = (props) => {
             setThursday(!thursday);
           }}
           />
-        <label htmlFor='friday'></label>
+        <label htmlFor='friday'>Friday</label>
         <input
           type='checkbox'
           name='friday'
@@ -146,7 +146,7 @@ const AddPracticeRoutine = (props) => {
             setFriday(!friday);
           }}
           />
-        <label htmlFor='saturday'></label>
+        <label htmlFor='saturday'>Saturday</label>
         <input
           type='checkbox'
           name='saturday'
@@ -155,7 +155,7 @@ const AddPracticeRoutine = (props) => {
             setSaturday(!saturday);
           }}
           />
-        <label htmlFor='sunday'></label>
+        <label htmlFor='sunday'>Sunday</label>
         <input
           type='checkbox'
           name='sunday'
