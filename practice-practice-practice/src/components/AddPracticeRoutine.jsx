@@ -11,13 +11,13 @@ const AddPracticeRoutine = (props) => {
   const [daily, setDaily] = useState("");
   const [frequency, setFrequency] = useState("");
   const [hours, setHours] = useState("");
-  const [monday, setMonday] = useState("");
-  const [tuesday, setTuesday] = useState("");
-  const [wednesday, setWednesday] = useState("");
-  const [thursday, setThursday] = useState("");
-  const [friday, setFriday] = useState("");
-  const [saturday, setSaturday] = useState("");
-  const [sunday, setSunday] = useState("");
+  const [monday, setMonday] = useState(false);
+  const [tuesday, setTuesday] = useState(false);
+  const [wednesday, setWednesday] = useState(false);
+  const [thursday, setThursday] = useState(false);
+  const [friday, setFriday] = useState(false);
+  const [saturday, setSaturday] = useState(false);
+  const [sunday, setSunday] = useState(false);
   const history = useHistory();
 
   async function handleSubmit(e) {
@@ -103,65 +103,65 @@ const AddPracticeRoutine = (props) => {
           />
         <label htmlFor='monday'></label>
         <input
-          type='text'
+          type='checkbox'
           name='monday'
           value={monday}
           onChange={(e) => {
-            setMonday(e.target.value);
+            setMonday(!monday);
           }}
           />
         <label htmlFor='tuesday'></label>
         <input
-          type='text'
+          type='checkbox'
           name='tuesday'
           value={tuesday}
           onChange={(e) => {
-            setTuesday(e.target.value);
+            setTuesday(!tuesday);
           }}
           />
         <label htmlFor='wednesday'></label>
         <input
-          type='text'
+          type='checkbox'
           name='wednesday'
           value={wednesday}
           onChange={(e) => {
-            setWednesday(e.target.value);
+            setWednesday(!wednesday);
           }}
           />
         <label htmlFor='thursday'></label>
         <input
-          type='text'
+          type='checkbox'
           name='thursday'
           value={thursday}
           onChange={(e) => {
-            setThursday(e.target.value);
+            setThursday(!thursday);
           }}
           />
         <label htmlFor='friday'></label>
         <input
-          type='text'
+          type='checkbox'
           name='friday'
           value={friday}
           onChange={(e) => {
-            setFriday(e.target.value);
+            setFriday(!friday);
           }}
           />
         <label htmlFor='saturday'></label>
         <input
-          type='text'
+          type='checkbox'
           name='saturday'
           value={saturday}
           onChange={(e) => {
-            setSaturday(e.target.value);
+            setSaturday(!saturday);
           }}
           />
         <label htmlFor='sunday'></label>
         <input
-          type='text'
+          type='checkbox'
           name='sunday'
           value={sunday}
           onChange={(e) => {
-            setSunday(e.target.value);
+            setSunday(!sunday);
           }}
         />
         <input type = 'submit' />

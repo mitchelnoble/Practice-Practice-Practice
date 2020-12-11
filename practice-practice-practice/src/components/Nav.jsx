@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <Nav>
-      <Link to ='/'></Link>
-      <Link to ='/add-practice-routine'></Link>
-    </Nav>
+    <nav>
+      <Link to ='/'>Home</Link>
+      <Link to ='/add-practice-routine'>Setup Your Practice Routine</Link>
+    </nav>
   );
 };
 

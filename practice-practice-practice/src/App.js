@@ -1,5 +1,4 @@
 import { Route } from "react-router-dom";
-import { BrowserRouter as Router } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 import Nav from "./components/Nav";
@@ -14,14 +13,14 @@ import './App.css';
 
 function App() {
 
-  const [practiceRoutine, setPracticeRoutine] = useState([]);
+  const [practiceRoutines, setPracticeRoutines] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
 
   useEffect(() => {
     async function getPracticeRoutines() {
       let response = await axios.get(baseURL, config);
       console.log(response.data.records);
-      setPracticeRoutine();
+      setPracticeRoutines(response.data.records);
     }
     getPracticeRoutines();
   }, [setToggleFetch]);
@@ -30,14 +29,15 @@ function App() {
 
   return (
     <div className="App">
-      <Route exact path="/Home-page">
-        <Homepage />
+      <Nav />
+      <Route exact path="/">
+        <Homepage practiceRoutines={practiceRoutines} setToggleFetch={setToggleFetch}/>
       </Route>
       <Route path="/add-practice-routine">
-        <AddPracticeRoutine />
+        <AddPracticeRoutine setToggleFetch={setToggleFetch}/>
       </Route>
       <Route path="/practiceroutine/:id">
-        <PracticeRoutine />
+        <PracticeRoutine practiceRoutines={practiceRoutines} setToggleFetch={setToggleFetch}/>
         </Route>
         <Route path="/routine-completion">
           <RoutineCompletion />
