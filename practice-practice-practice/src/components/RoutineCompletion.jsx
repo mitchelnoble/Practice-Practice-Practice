@@ -8,7 +8,7 @@ const RoutineCompletion = () => {
 
   return (
     <div className = "prc-text">
-      <h1>Yes! You completed this weeks practice!</h1>
+      <h1>Yes! You completed this week's practice!</h1>
     </div>
   );
 };
