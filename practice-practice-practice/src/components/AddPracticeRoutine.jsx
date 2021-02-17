@@ -45,7 +45,8 @@ const AddPracticeRoutine = (props) => {
   }
 
   return (
-    <div>
+    <div className="add-practice-container">
+      <div className="form-container">
       <form className = "pr-form" onSubmit={handleSubmit}>
         <label htmlFor='topic'>So, what is your practice topic?:</label>
         <br></br>
@@ -162,6 +163,7 @@ const AddPracticeRoutine = (props) => {
         /> <br/> <br/>
         <input className="pr-button" type = 'submit' />
       </form>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,10 @@
+.add-practice-container {
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 .pr-form {
   font-family: 'Lato';
   font-weight: bolder;
@@ -8,4 +15,15 @@
 .pr-button {
   font-family: 'Lato';
   font-weight: bolder;
+}
+
+.form-container {
+  height: 65vh;
+  width: 50vw;
+  background:white;
+  border: 2px solid grey;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
