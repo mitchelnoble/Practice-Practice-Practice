@@ -17,13 +17,28 @@ justify-content: center;
   font-weight: bolder;
 }
 
-.form-container {
-  height: 65vh;
-  width: 50vw;
-  background:white;
-  border: 2px solid grey;
-  border-radius: 35px;
+.form-title {
+  font-family: 'Permanent Marker';
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: underline;
+}
+
+.form-container {
+  font-family: 'Lato','sans';
+  height: 75vh;
+  width: 50vw;
+  padding: 2em;
+  background:white;
+  border: 2px solid grey;
+  border-radius: 35px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.pr-button {
+  font-family: 'Permanent Marker','sans';
+  border-radius: 10px;
 }

@@ -46,7 +46,8 @@ const AddPracticeRoutine = (props) => {
 
   return (
     <div className="add-practice-container">
-      <div className="form-container">
+      <div className="form-container"> 
+      <h2 className="form-title">Let's Practice:</h2>
       <form className = "pr-form" onSubmit={handleSubmit}>
         <label htmlFor='topic'>So, what is your practice topic?:</label>
         <br></br>
